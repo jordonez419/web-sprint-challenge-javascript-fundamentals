@@ -29,13 +29,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    For each is essentially a different syntax for a for loop, it will pass a function on each item in an array.
+    Map does the same thing but the key difference is that map returns you a new array as a result of that function being invoked on the elements.
+
 2. Explain the difference between a callback and a higher order function.
 
+    A higher order function is any function that that takes other functions as paramaters(callbacks).
+    A callback function is any function that is passed into another function as a parameter.
+
 3. Can you explain what a closure is and how you used it in the counter function? 
+    A closure gives you access to an outer function’s scope from an inner function
 
 4. Describe the four principles of the 'this' keyword.
 
+Principle 1: Window/Global Object Binding: This is what we do when we declare ANY variable, basically the context of THIS will be the global scope.
+
+Principle 2: Implicit Binding: Basically means that anytime a dot proceeds a function, the context for that function to operate on will whatever is to the left of that dot
+
+Principle 3: New binding: This principle works on instances. We create a constructor, and any instance of that constructor that is created, its THIS context will be refferencing that constructor
+
+Principle 4: Explicit binding: When we use .call() or .apply(), we are explicitly telling javascript to bind these things to a specific parent constructor.
+
 5. Why do we need super() in an extended class?
+
+  Super is the syntactic sugar that replaces .call. It basically allows us to access and things from an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
